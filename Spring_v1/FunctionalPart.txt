@@ -1,0 +1,36 @@
+Admin	
+Admin users can approve course applications and leave applications
+Admin users can create new student/faculty/admin which will auto direct to the creation of a new user account.
+Admin users has full access rights to create/retrieve/update/delete all entities
+
+Faculty
+Faculty users can view only courses that are assigned to them.
+They can view the students who are enrolled in their assigned courses including student's GPA.
+Faculty users can view/apply leaves which are then approved/rejected by admin users
+Faculty users have the option to delete their leave applications if it is pending.
+
+Student
+When student Apply Course, Email Notification will be sent to their registered email address.
+If the courses reach Max Course size, this couses detail can be viewed but not applied.(Validate with Course Size)
+Student can delete their course application while course status is pending
+Student can View 
+	-Available Courses
+	-Course Details
+	-all Pending course
+	-all Approved course
+	-all Reject course
+Student can View Education Record
+	-Can calculate GPA
+
+Security
+Users are not allowed to access pages that they do not have access to(i.e admin cannot access faculty/home or student/home)
+Security is enabled by session object checking
+
+Pagination
+Pagination is implemented for most of the pages which will show a lot of results(max size of 5 per page)
+
+Report Generation
+Admin users can view all list(courses/courseapplications/faculty/facultyleaves/students/users/grades) and generate excel file that is in csv format.
+
+
+
